@@ -1,22 +1,65 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
+public class CH2A {
 
-# Log file
-*.log
+	public static void main(String[] args) {
+		/*Compute the volume of a cylinder
+		 * area = radius * radius * pi
+		 * volume = area * length
+		 */
+		System.out.println("Miryah Adair");
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter the radius: ");
+		double radius = input.nextDouble();
+		System.out.print("Enter the length: ");
+		double length = input.nextDouble();
+		double pi = 3.14;
+		double area = radius * radius * pi;
+		double volume = area * length;
+		
+		System.out.println("The area of a cylinder " + area );
+		System.out.print("The volume of a cylinder is " + volume);
+	}
 
-# BlueJ files
-*.ctxt
+}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
+import java.util.Scanner;
+public class CH2B {
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+	public static void main(String[] args) {
+		/* Convert feet into meters
+		 * One foot = 0.305 meter
+		 */
+
+		System.out.println("Miryah Adair");
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a value for feet: ");
+		double meter = input.nextDouble();
+		double feet = 0.305;
+		System.out.println("Value for feet is " + (feet*meter) + " meters");
+		
+	}
+}
+
+
+
+import java.util.Scanner;
+public class CH2C {
+
+	public static void main(String[] args) {
+		/* Convert pounds into kilograms
+		 * One pound = 0.454 kilograms;
+		 */
+		
+		System.out.println("Miryah Adair");
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a number in pounds: ");
+		double kg = input.nextDouble();
+		double pound = 0.454;
+		System.out.println("Value for pounds is " + (kg * pound) + pound);
+			
+	}
+
+}
